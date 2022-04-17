@@ -76,8 +76,15 @@ copyBtn.forEach((el, i) => {
         } else {
             passwordResult[i].select()
             navigator.clipboard.writeText(passwordResult[i].value)
+
+            const originalContent = el.innerHTML
+            const originalBgColor = el.style.backgroundColor
             el.innerHTML = "Copied"
             el.style.backgroundColor = "#10B981"
+            setTimeout(() => {
+                el.innerHTML = originalContent
+                el.style.backgroundColor = originalBgColor
+            }, 1100);
         }
     })
 });
