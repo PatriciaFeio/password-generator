@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+/* =========================
+    typography
+ ===========================*/
+
+ h1 {
+     font-family: 'Karla', sans-serif;
+     font-size: 1.5625rem;
+     font-weight: 800;
+     color: #fff;
+ }
+
+ h1 span {
+     color: #FBBF24;
+     font-size: 1.5625rem;
+ }
+
+ .btn {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: inherit;
+ }
+
+ .supporting-text {
+    font-size: 1rem;
+    letter-spacing: 1px;
+     color: #9CA3AF;
+ }
+
+ .error-message {
+     font-size: 0.75rem;
+     color: #FBBF24;
+ }
+
+ .pass-length-wrapper label {
+    color: #9CA3AF;
+ }
+
+ .password-result {
+     font-size: inherit;
+     color: #FBBF24;
+ }
+
+ .password-length {
+     font-size: 1rem;
+     color: #FBBF24;
+ }
+
+ .content-result {
+     color: #FBBF24;
+ }
+
+/* =========================
+    main-content
+ ===========================*/
+
+ h1 {
+     width: 100%;
+     margin-bottom: 5px;
+ }
+
+ .supporting-text  {
+     margin: 0;
+ }
+
+ .error-message-display {
+    visibility: hidden;
+ }
+
+ .card-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c;
+}
+
+ .card-wrapper {
+    width: 85%;
+    max-width: 550px;
+    display: flex;
+    align-items: flex-end;
+    background-color: #1F2937;
+    border-radius: 5px;
+ }
+
+ .card-content-wrapper {
+    width: 85%;
+    margin: 0 auto;
+ }
+
+ .content-value {
+    text-align: left;
+    border-bottom: 1px solid #2F3E53;
+    padding-bottom: 40px;
+ }
+
+ .pass-wrapper {
+     margin-top: 50px;
+     width: 100%;
+ }
+
+ .pass-length-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .password-length {
+    background-color: #273549;
+    border: 0;
+    position: relative;
+    padding: 5px 0px 5px 12px;
+    width: 55%;
+ }
+
+ .password-length:focus {
+    outline: thin solid;
+ }
+
+ input[type=number]::-webkit-inner-spin-button, 
+ input[type=number]::-webkit-outer-spin-button {
+   opacity: 0.9;
+   width: 1em;
+   border-left: 4px solid #888;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+ }
+
+ .btn-wrapper {
+     display: flex;
+     gap: 15px;
+ }
+
+ .btn {
+    text-align: center;
+    background-color: #8B5CF6;
+    border: 2px solid #8B5CF6;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 10px;
+ }
+
+ .btn:focus {
+    outline: 2px dotted #FBBF24;
+ }
+
+ .btn:hover {
+     background-color: #10B981;
+     border: 2px solid #10B981;
+ }
+
+ .btn img {
+    margin-right: 8px;
+ }
+
+ .btn-copy {
+     flex: 0 0 35%;
+ }
+
+.password-result {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #273549;
+    border: 0;
+    outline: none;
+}
+
+.content-result {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.result-wrapper {
+    display: flex;
+}
+
+/* =========================
+    media-queries
+ ===========================*/
+
+ @media (min-width: 550px) {
+
+    h1,
+    h1 span {
+       font-size: 2.5rem;
+    }
+
+    h1 {
+        width: 80%;
+    }
+
+    .pass-wrapper {
+        width: 51%;
+    }
+
+   .supporting-text {
+       font-size: 1.25rem;
+    }
+   
+   .card-wrapper {
+       width: 85%;
+   }
+
+   .btn-generator {
+    flex: 0 0 50%;
+}
+
+    .content-result {
+       grid-template-columns: repeat(2, 1fr);
+       grid-gap: 1em;
+   }
+}
