@@ -16,14 +16,15 @@ body {
 
  h1 {
      font-family: 'Karla', sans-serif;
-     font-size: 1.5625rem;
+     /* font-size: 1.5625rem; */
+     font-size: 2.5rem;
      font-weight: 800;
      color: #fff;
  }
 
  h1 span {
      color: #FBBF24;
-     font-size: 1.5625rem;
+     font-size: 2.5rem;
  }
 
  .btn {
@@ -35,7 +36,7 @@ body {
  .supporting-text {
     font-size: 1rem;
     letter-spacing: 1px;
-     color: #9CA3AF;
+    color: #9CA3AF;
  }
 
  .error-message {
@@ -59,6 +60,20 @@ body {
 
  .content-result {
      color: #FBBF24;
+ }
+
+ .footer-copyright {
+    color: #9CA3AF;
+    font-size: 0.75rem;
+ }
+
+ .footer-copyright a {
+    color: #9CA3AF;
+    font-size: 0.75rem;
+ }
+
+ .footer-copyright a:hover {
+    color: #8B5CF6;
  }
 
 /* =========================
@@ -188,6 +203,7 @@ body {
     padding-top: 30px;
     padding-bottom: 50px;
     display: grid;
+    grid-gap: 1em;
     grid-template-columns: auto;
 }
 
@@ -195,16 +211,16 @@ body {
     display: flex;
 }
 
+.footer-copyright {
+    position: absolute;
+    bottom: 0;
+}
+
 /* =========================
     media-queries
  ===========================*/
 
  @media (min-width: 550px) {
-
-    h1,
-    h1 span {
-       font-size: 2.5rem;
-    }
 
     h1 {
         width: 80%;
@@ -228,6 +244,5 @@ body {
 
     .content-result {
        grid-template-columns: repeat(2, 1fr);
-       grid-gap: 1em;
    }
 }
