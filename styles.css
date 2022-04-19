@@ -99,6 +99,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #1c1c1c;
+    gap: 10px;
 }
 
  .card-wrapper {
@@ -108,6 +109,7 @@ body {
     align-items: flex-end;
     background-color: #1F2937;
     border-radius: 5px;
+    
  }
 
  .card-content-wrapper {
@@ -211,10 +213,10 @@ body {
     display: flex;
 }
 
-.footer-copyright {
+/* .footer-copyright {
     position: absolute;
     bottom: 0;
-}
+} */
 
 /* =========================
     media-queries
